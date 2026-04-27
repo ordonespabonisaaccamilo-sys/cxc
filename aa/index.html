@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fusión Gourmet – Festival Gastronómico de Vanguardia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="site-header">
+    <a href="#hero" class="logo" aria-label="Fusión Gourmet Festival">
+      <span class="logo-main">Fusión Gourmet</span>
+      <span class="logo-sub">Festival · 2025</span>
+    </a>
+
+    <nav aria-label="Navegación principal">
+      <a href="#events">Catas</a>
+      <a href="#chefs">Chefs</a>
+      <a href="#about">Salería</a>
+      <a href="#multimedia">Galería</a>
+      <a href="#footer-contact">Contacto</a>
+      <a href="#events" class="nav-cta">Reservar</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <a href="#events" class="mobile-link">Catas</a>
+    <a href="#chefs" class="mobile-link">Chefs</a>
+    <a href="#about" class="mobile-link">Festival</a>
+    <a href="#multimedia" class="mobile-link">Galería</a>
+    <a href="#footer-contact" class="mobile-link">Contacto</a>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" aria-label="Sección principal">
+      <div class="hero-bg" role="img" aria-label="Fotografía gastronómica de alta cocina"></div>
+      <div class="hero-content">
+        <p class="hero-label">Madrid · 12 – 15 Junio 2025</p>
+        <h1 class="hero-title">
+          Sabores de<br>
+          <em>Vanguardia</em><br>
+          <span class="script">Un Festival Único</span>
+        </h1>
+        <p class="hero-desc">
+          Cuatro días de experiencias culinarias extraordinarias donde la alta cocina de autor se encuentra con la innovación sensorial. Talleres, catas y encuentros con los mejores chefs del mundo.
+        </p>
+        <div class="hero-actions">
+          <a href="#events" class="btn-primary">Reservar entrada</a>
+          <a href="#about" class="btn-outline">Descubrir más</a>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span>Scroll</span></div>
+    </section>
+
+    <!-- ===== SCHEDULE / EVENTS ===== -->
+    <section id="events" aria-labelledby="events-title">
+      <div class="events-header">
+        <div>
+          <p class="section-label">Programa Oficial</p>
+          <h2 class="section-title" id="events-title">Horario de <em>Catas</em></h2>
+        </div>
+        <a href="#" class="btn-outline">Ver programa completo</a>
+      </div>
+
+      <div class="table-wrapper reveal">
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Chef</th>
+              <th>Taller / Experiencia</th>
+              <th>Maridaje</th>
+              <th>Tipo</th>
+              <th>Tickets</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>14:00</td>
+              <td>Chef Ana López</td>
+              <td>Texturas del Mediterráneo</td>
+              <td>Manzanilla de Huelva</td>
+              <td><span class="badge badge-gold">Masterclass</span></td>
+              <td><a href="#" class="btn-comprar">Comprar</a></td>
+            </tr>
+            <tr>
+              <td>15:00</td>
+              <td>Chef Ana López</td>
+              <td>Fermentados de Nueva Era</td>
+              <td>Sake artesanal</td>
+              <td><span class="badge badge-copper">Cata</span></td>
+              <td><a href="#" class="btn-comprar">Comprar</a></td>
+            </tr>
+            <tr>
+              <td>16:00</td>
+              <td>Chef Ariel Núñez</td>
+              <td>Fuego y Geometría</td>
+              <td>Mezcal de Oaxaca</td>
+              <td><span class="badge badge-cream">Demostración</span></td>
+              <td><a href="#" class="btn-comprar">Comprar</a></td>
+            </tr>
+            <tr>
+              <td>17:30</td>
+              <td>Chef Mei Lin</td>
+              <td>Umami — Los Sabores Ocultos</td>
+              <td>Vino naranja</td>
+              <td><span class="badge badge-gold">Masterclass</span></td>
+              <td><a href="#" class="btn-comprar">Comprar</a></td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>Chef Marco Rossi</td>
+              <td>Trufa & Alta Cocina Italiana</td>
+              <td>Barolo DOCG</td>
+              <td><span class="badge badge-copper">Cata</span></td>
+              <td><a href="#" class="btn-comprar">Comprar</a></td>
+            </tr>
+            <tr>
+              <td>20:30</td>
+              <td>Varios Chefs</td>
+              <td>Gran Banquete de Cierre</td>
+              <td>Maridaje completo</td>
+              <td><span class="badge badge-gold">Gala</span></td>
+              <td><a href="#" class="btn-comprar">Comprar</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="about-visual reveal">
+        <div class="about-img-main" role="img" aria-label="Chef preparando un plato de alta cocina"></div>
+        <div class="about-img-accent" role="img" aria-label="Detalle de emplatado artístico"></div>
+        <div class="about-badge">
+          <strong>4</strong>
+          <span>edición</span>
+        </div>
+      </div>
+
+      <article class="about-text reveal reveal-delay-2">
+        <p class="section-label">Sobre el Festival</p>
+        <h2 class="section-title" id="about-title">Nuestra <em>Filosofía</em></h2>
+        <div class="divider"></div>
+        <p>
+          Fusión Gourmet nace del deseo de crear un espacio donde la gastronomía de autor se convierte en lenguaje universal. Reunimos talentos de los cinco continentes para explorar los límites del sabor, la textura y la memoria culinaria.
+        </p>
+        <p>
+          Cada edición es una declaración: la cocina no es solo alimento, es cultura, territorio, ciencia y arte. Aquí, los ingredientes hablan de origen; las técnicas, de evolución; y cada plato, de una historia que merece ser contada.
+        </p>
+
+        <ul class="values-list" aria-label="Valores del festival">
+          <li>Sostenibilidad radical</li>
+          <li>Kilómetro cero</li>
+          <li>Innovación técnica</li>
+          <li>Biodiversidad culinaria</li>
+          <li>Comercio justo</li>
+          <li>Cocina sin residuos</li>
+          <li>Inclusión gastronómica</li>
+          <li>Saberes ancestrales</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ===== CHEFS ===== -->
+    <section id="chefs" aria-labelledby="chefs-title">
+      <div class="chefs-header reveal">
+        <p class="section-label">Artistas Invitados</p>
+        <h2 class="section-title" id="chefs-title">Nuestros <em>Chefs</em></h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="chefs-grid">
+        <article class="chef-card reveal">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80" alt="Chef Ana López preparando un plato" loading="lazy" />
+          <div class="chef-overlay">
+            <h3 class="chef-name">Ana López</h3>
+            <p class="chef-origin">Madrid, España</p>
+            <p class="chef-specialty">Maestra del producto ibérico y las texturas contemporáneas. 2 estrellas Michelin.</p>
+          </div>
+        </article>
+
+        <article class="chef-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=600&q=80" alt="Chef Ariel Núñez en su cocina" loading="lazy" />
+          <div class="chef-overlay">
+            <h3 class="chef-name">Ariel Núñez</h3>
+            <p class="chef-origin">Oaxaca, México</p>
+            <p class="chef-specialty">Guardián de los sabores prehispánicos reconvertidos en alta cocina de vanguardia.</p>
+          </div>
+        </article>
+
+        <article class="chef-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&q=80" alt="Chef Mei Lin trabajando con precisión" loading="lazy" />
+          <div class="chef-overlay">
+            <h3 class="chef-name">Mei Lin</h3>
+            <p class="chef-origin">Hong Kong · Shanghái</p>
+            <p class="chef-specialty">Fusión de la cocina cantonesa con técnicas francesas de nouvelle cuisine.</p>
+          </div>
+        </article>
+
+        <article class="chef-card reveal reveal-delay-3">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&q=80" alt="Chef Marco Rossi con sus ingredientes" loading="lazy" />
+          <div class="chef-overlay">
+            <h3 class="chef-name">Marco Rossi</h3>
+            <p class="chef-origin">Piamonte, Italia</p>
+            <p class="chef-specialty">Especialista en trufas, fermentados italianos y la cocina del territorio. 3 estrellas.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== MULTIMEDIA ===== -->
+    <section id="multimedia" aria-labelledby="multimedia-title">
+      <div class="media-header reveal">
+        <p class="section-label">Galería</p>
+        <h2 class="section-title" id="multimedia-title">Momentos <em>Únicos</em></h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="gallery-grid" role="list" aria-label="Galería de imágenes del festival">
+
+        <div class="gallery-item g1 reveal" role="listitem">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Mesa gourmet con platos de autor" loading="lazy" />
+        </div>
+        <div class="gallery-item g2 reveal reveal-delay-1" role="listitem">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80" alt="Plato de alta cocina con hierbas" loading="lazy" />
+        </div>
+        <div class="gallery-item g3 reveal reveal-delay-2" role="listitem">
+          <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&q=80" alt="Emplatado artístico con salsas" loading="lazy" />
+        </div>
+        <div class="gallery-item g4 reveal reveal-delay-1" role="listitem">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza gourmet con ingredientes premium" loading="lazy" />
+        </div>
+        <div class="gallery-item g5 reveal reveal-delay-2" role="listitem">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Ensalada de temporada con flores" loading="lazy" />
+        </div>
+        <div class="gallery-item g6 reveal reveal-delay-3" role="listitem">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80" alt="Ambiente íntimo del festival" loading="lazy" />
+        </div>
+        <div class="gallery-item g7 reveal reveal-delay-4" role="listitem">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Chef en acción durante masterclass" loading="lazy" />
+        </div>
+
+        <div class="video-wrap" role="listitem" aria-label="Video del festival">
+          <div class="video-inner">
+            <button class="play-btn" aria-label="Reproducir video del festival"></button>
+            <p class="video-caption">El arte de crear desde el fuego — Fusión Gourmet 2024</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SPONSORS ===== -->
+    <section id="sponsors" aria-labelledby="sponsors-title">
+      <p class="sponsors-label" id="sponsors-title">Patrocinadores Principales</p>
+      <ul class="sponsors-list">
+        <li>Ruinart</li>
+        <li>Ibéricos Joselito</li>
+        <li>Arzuaga Navarro</li>
+        <li>Riedel</li>
+        <li>Thermomix Pro</li>
+        <li>Aceites La Española</li>
+        <li>D.O. Ribera del Duero</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer-contact" role="contentinfo">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-main">Fusión Gourmet</span>
+          <span class="logo-sub">Festival · 2025</span>
+        </div>
+        <p class="footer-tagline">
+          Cuatro días de gastronomía de vanguardia en el corazón de Madrid. Una experiencia que despierta todos los sentidos.
+        </p>
+        <ul class="social-links" aria-label="Redes sociales del festival">
+          <li><a href="#" aria-label="Instagram">IG</a></li>
+          <li><a href="#" aria-label="Twitter / X">X</a></li>
+          <li><a href="#" aria-label="Facebook">FB</a></li>
+          <li><a href="#" aria-label="YouTube">YT</a></li>
+          <li><a href="#" aria-label="TikTok">TK</a></li>
+        </ul>
+      </div>
+
+      <nav aria-label="Secciones del sitio">
+        <p class="footer-title">Secciones</p>
+        <ul class="footer-links">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#events">Horario de catas</a></li>
+          <li><a href="#about">Sobre el festival</a></li>
+          <li><a href="#chefs">Nuestros chefs</a></li>
+          <li><a href="#multimedia">Galería</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Festival">
+        <p class="footer-title">Festival</p>
+        <ul class="footer-links">
+          <li><a href="#">Prensa & Media</a></li>
+          <li><a href="#">Patrocinadores</a></li>
+          <li><a href="#">Acreditaciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </nav>
+
+      <address class="footer-contact" style="font-style: normal;">
+        <p class="footer-title">Contacto</p>
+        <p>
+          <strong>Sede:</strong><br>
+          Pabellón de Cristal<br>
+          Parque del Retiro, Madrid
+        </p>
+        <br>
+        <p>
+          <strong>Email:</strong><br>
+          hola@fusiongourmet.es
+        </p>
+        <br>
+        <p>
+          <strong>Teléfono:</strong><br>
+          +34 91 000 00 00
+        </p>
+      </address>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Fusión Gourmet Festival. Todos los derechos reservados.</p>
+      <p>Diseñado con pasión por la alta cocina · Madrid, España</p>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="main.js"></script>
+
+</body>
+</html>
